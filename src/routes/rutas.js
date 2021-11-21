@@ -16,10 +16,10 @@ router.post('/sign',createUser)
 
 //Post
 
-router.get('/post',validarJWT, getPost);
-router.get('/buscar/:id', validarJWT, buscarPost);
-router.post('/create' ,validarJWT, createPost);
-router.delete('/delete/:idpost', validarJWT, deletePost);
-router.put('/update/:id', validarJWT, updatepost);
+router.get('/post', getPost);
+router.get('/buscar/:id', buscarPost);
+router.post('/create' , createPost);
+router.delete('/delete/:idpost',  deletePost);
+router.put('/update/:id', updatepost);
 
 module.exports = router;
